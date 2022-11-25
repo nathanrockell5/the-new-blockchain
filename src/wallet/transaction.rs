@@ -15,7 +15,7 @@ pub struct Transaction{
 }
 
 impl Transaction{ 
-    pub fn new(sender_public_key: String, sender_private_key: String, recipient_public_key: String, amount: &f64) -> Self{
+    pub fn new(recipient_public_key: String, amount: &f64, sender_public_key: String, sender_private_key: String) -> Self{
         let time_stamp: DateTime<Utc> = Utc::now();
         let fee: f64 =  amount * 0.01;
         let hash = Hashtools::create_hash(format!("{}{}{}{}{}", 

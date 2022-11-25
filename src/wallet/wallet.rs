@@ -44,7 +44,7 @@ impl Wallet {
         // let test_hash: &[u8] = b"0000abc1e11b8d37cle1232a2ea6d290cddb0c678058c37aa766f813cbbb366e";
         // let sig: Vec<u8> = Self::create_signature(&keys, test_hash);
         // Self::validate_signature(&keys, test_hash, &sig)
-        String::from("validate private key")
+        todo!("VALIDATE PRIVATE KEY")
     }
 
     pub fn to_string(&self, bc: &Blockchain) -> String{
